@@ -22,7 +22,6 @@ export async function decompress(inPath: string, outPath: string): Promise<void>
 
   try {
     // Pipeline: Datei -> Gunzip -> Datei
-    // Behandelt Fehler automatisch und räumt Streams auf.
     await pipeline(input, gunzip, output);
     process.stdout.write("\n");
     console.log("  Entpacken erfolgreich beendet.");
