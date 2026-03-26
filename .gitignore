@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.log
+
+# Große Dateien (6GB) nicht einchecken
+decrypted.txt
+secret.dec.gz
+
+# Systemdateien
+.DS_Store
+Thumbs.db
